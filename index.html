@@ -194,7 +194,23 @@
     <section class="section involvement-section" id="get-involved">
         <div class="container involvement-container">
             <div class="involvement-message"><p class="section-label section-label-light">Get Involved</p><h2>Help Build the Campaign</h2><p>Volunteer, request a yard sign, help at an event, or stay informed about what's happening in District 3.</p></div>
-            <form class="signup-form" onsubmit="return false;">
+            <form
+    class="signup-form"
+    action="https://api.web3forms.com/submit"
+    method="POST"
+>
+
+    <input
+        type="hidden"
+        name="access_key"
+        value="43442ce3-ae8c-46fc-97e9-3e813e63bcd2"
+    >
+
+    <input
+        type="hidden"
+        name="subject"
+        value="New Get Involved Submission - Jeremiah Farrell Campaign"
+    >
                 <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name"></div>
                 <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" placeholder="you@example.com"></div>
                 <div class="form-group"><label for="phone">Phone</label><input type="tel" id="phone" name="phone" placeholder="(555) 555-5555"></div>
