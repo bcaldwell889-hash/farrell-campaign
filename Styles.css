@@ -1101,4 +1101,36 @@ p {
         font-size: 1rem;
     }
 
+}/* =========================================
+   ELECTION DATES
+   ========================================= */
+
+.election-dates-section {
+    background: var(--navy);
+    color: var(--white);
+    padding: 70px 0;
+}
+
+.election-dates-section h2 {
+    color: var(--yellow);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.election-dates-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.election-dates-list li {
+    color: var(--white);
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.election-dates-list li::marker {
+    color: var(--yellow);
 }
