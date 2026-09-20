@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donate | Jeremiah Farrell for City Council 2026</title>
+
+    <link rel="stylesheet" href="Styles.css">
+
+    <style>
+        /* =========================================
+           DONATION PAGE
+           ========================================= */
+
+        .donation-hero {
+            background: var(--navy);
+            color: var(--white);
+            text-align: center;
+            padding: 65px 20px;
+            border-bottom: 5px solid var(--yellow);
+        }
+
+        .donation-hero h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .donation-hero h1 span {
+            color: var(--yellow);
+        }
+
+        .donation-hero p {
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.6;
+        }
+/* =========================================
+   DONATION PAGE HEADER
+   ========================================= */
+
+.donate-header {
+    background: var(--navy-dark);
+    border-bottom: 4px solid var(--yellow);
+    width: 100%;
+}
+
+.donate-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Campaign Name */
+
+.donate-brand {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: var(--white);
+    line-height: 1;
+    min-width: 220px;
+}
+
+.donate-brand-first {
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--yellow);
+    margin-bottom: 3px;
+}
+
+.donate-brand-last {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: var(--white);
+}
+
+.donate-brand-office {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--yellow);
+    margin-top: 5px;
+}
+
+
+/* Navigation */
+
+.donate-nav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.donate-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.donate-nav a:hover {
+    color: var(--yellow);
+}
+
+
+/* Donate Button */
+
+.donate-nav .donate-nav-button {
+    background: var(--yellow);
+    color: var(--navy-dark);
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+.donate-nav .donate-nav-button:hover {
+    background: var(--yellow-hover);
+    color: var(--navy-dark);
+}
+
+
+/* Mobile */
+
+@media (max-width: 850px) {
+
+    .donate-header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .donate-nav {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 15px 20px;
+    }
+
+    .donate-nav .donate-nav-button {
+        margin-left: auto;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .donate-header-inner {
+        padding: 15px 20px;
+    }
+
+    .donate-brand-last {
+        font-size: 1.7rem;
+    }
+
+    .donate-nav {
+        font-size: 0.9rem;
+    }
+}
+        .donation-page {
+            background: #f7f8fa;
+            padding: 60px 20px;
+        }
+
+        .donation-wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1.4fr 0.8fr;
+            gap: 45px;
+            align-items: start;
+        }
+
+        .donation-form-card,
+        .payment-card {
+            background: var(--white);
+            border-radius: 8px;
+            padding: 35px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .donation-form-card h2,
+        .payment-column h2 {
+            color: var(--navy);
+            margin-top: 0;
+        }
+
+        .donation-intro {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .donation-form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .donation-field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .donation-field.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .donation-field label {
+            color: var(--navy);
+            font-weight: 700;
+            margin-bottom: 7px;
+        }
+
+        .donation-field input,
+        .donation-field select {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #cbd2d9;
+            border-radius: 5px;
+            font: inherit;
+            box-sizing: border-box;
+        }
+
+        .donation-field input:focus,
+        .donation-field select:focus {
+            outline: 2px solid var(--yellow);
+            border-color: var(--navy);
+        }
+
+        .required {
+            color: #b42318;
+        }
+
+        .amount-wrapper {
+            position: relative;
+        }
+
+        .amount-wrapper span {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .amount-wrapper input {
+            padding-left: 32px;
+        }
+
+        .certifications {
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 25px;
+        }
+
+        .certification {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            margin-bottom: 18px;
+            line-height: 1.5;
+        }
+
+        .certification input {
+            width: 20px;
+            height: 20px;
+            flex: 0 0 auto;
+            margin-top: 3px;
+        }
+
+        .payment-column > p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .payment-card {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .payment-card h3 {
+            color: var(--navy);
+            font-size: 1.6rem;
+            margin-top: 0;
+        }
+
+        .payment-card p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .payment-button {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 20px;
+            padding: 15px 20px;
+            border: 0;
+            border-radius: 5px;
+            font: inherit;
+            font-weight: 700;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .paypal-button {
+            background: var(--navy);
+            color: var(--white);
+        }
+
+        .zelle-button {
+            background: var(--yellow);
+            color: var(--navy);
+        }
+
+        .payment-button:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+
+        .payment-note {
+            font-size: 0.88rem;
+            margin-top: 20px;
+            color: #666;
+        }
+
+        .donation-submit {
+            grid-column: 1 / -1;
+            margin-top: 10px;
+        }
+
+        .donation-submit button {
+            width: 100%;
+            background: var(--yellow);
+            color: var(--navy);
+            border: none;
+            padding: 17px 25px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            cursor: pointer;
+        }
+
+        .donation-submit button:hover {
+            background: var(--yellow-hover);
+        }
+
+        .campaign-paid-for {
+            background: var(--navy-dark);
+            color: var(--white);
+            text-align: center;
+            padding: 25px 20px;
+            border-top: 4px solid var(--yellow);
+        }
+
+        .campaign-paid-for p {
+            margin: 0;
+            font-weight: 600;
+        }
+
+        @media (max-width: 850px) {
+            .donation-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .donation-hero h1 {
+                font-size: 2.3rem;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .donation-form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .donation-field.full-width {
+                grid-column: auto;
+            }
+
+            .donation-submit {
+                grid-column: auto;
+            }
+
+            .donation-form-card,
+            .payment-card {
+                padding: 25px 20px;
+            }
+        }
+        /* =========================================
+   CONTRIBUTION INFORMATION
+   ========================================= */
+
+.contribution-info-card {
+    text-align: left;
+}
+
+.contribution-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.contribution-step:last-child {
+    margin-bottom: 0;
+}
+
+.step-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 38px;
+    width: 38px;
+    height: 38px;
+
+    background: var(--yellow);
+    color: var(--navy);
+
+    border-radius: 50%;
+
+    font-weight: 900;
+    font-size: 1.05rem;
+}
+
+.contribution-step strong {
+    display: block;
+    color: var(--navy);
+    font-size: 1.05rem;
+    margin-bottom: 4px;
+}
+
+.contribution-step p {
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+.contribution-record-card,
+.contribution-security-card {
+    text-align: left;
+}
+
+.contribution-record-card h3,
+.contribution-security-card h3 {
+    border-bottom: 3px solid var(--yellow);
+    padding-bottom: 10px;
+}
+    </style>
+<script 
+  src="https://www.paypal.com/sdk/js?client-id=BAAkLCBsSqIdY5RVqtu10fCoNAvQh7YnT6lSddqKuR0xE5s2GUV5mDJ8KNLhWufvVlHPoPsCxicPm28FX0&components=hosted-buttons&enable-funding=venmo&currency=USD">
+</script>
+</head>
+
+<body>
+
+<!-- DONATION PAGE HEADER -->
+<header class="donate-header">
+    <div class="donate-header-inner">
+
+        <a href="index.html" class="donate-brand">
+            <span class="donate-brand-first">JEREMIAH</span>
+            <span class="donate-brand-last">FARRELL</span>
+            <span class="donate-brand-office">FOR CITY COUNCIL 2026</span>
+        </a>
+
+        <nav class="donate-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#goals">My Goals</a>
+            <a href="index.html#how-to-vote">How to Vote</a>
+            <a href="index.html#get-involved">Get Involved</a>
+
+            <a href="donate.html" class="donate-nav-button">
+                Donate
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+    <!-- DONATION HERO -->
+    <section class="donation-hero">
+
+        <h1>
+            Make a <span>Contribution</span>
+        </h1>
+
+        <p>
+            Please provide the information below before continuing
+            to your selected contribution method.
+        </p>
+
+    </section>
+
+
+    <!-- DONATION FORM -->
+    <main class="donation-page">
+
+        <div class="donation-wrapper">
+
+            <section class="donation-form-card">
+
+                <h2>Contributor Information</h2>
+
+                <p class="donation-intro">
+                    Fields marked with an asterisk are required.
+                    Please enter the contributor's information exactly
+                    as it should appear in campaign records.
+                </p>
+
+                <!--
+                    Payment processing is intentionally NOT connected yet.
+                    We will connect this form to the campaign's recordkeeping
+                    process before enabling PayPal or Zelle.
+                -->
+
+                <form id="donation-form">
+
+                    <div class="donation-form-grid">
+
+                        <div class="donation-field full-width">
+                            <label for="full-name">
+                                Full Name <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="full-name"
+                                name="full_name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field full-width">
+                            <label for="street-address">
+                                Street Address <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="street-address"
+                                name="street_address"
+                                autocomplete="street-address"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="city">
+                                City <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                name="city"
+                                autocomplete="address-level2"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="state">
+                                State <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="state"
+                                name="state"
+                                autocomplete="address-level1"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="zip">
+                                ZIP Code <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="zip"
+                                name="zip"
+                                autocomplete="postal-code"
+                                inputmode="numeric"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="occupation">
+                                Occupation <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="occupation"
+                                name="occupation"
+                                placeholder="Example: Teacher"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="employer">
+                                Employer <span class="required">*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="employer"
+                                name="employer"
+                                placeholder="Employer name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="amount">
+                                Contribution Amount <span class="required">*</span>
+                            </label>
+
+                            <div class="amount-wrapper">
+
+                                <span>$</span>
+
+                                <input
+                                    type="number"
+                                    id="amount"
+                                    name="contribution_amount"
+                                    min="1"
+                                    step="0.01"
+                                    required
+                                >
+
+                            </div>
+                        </div>
+
+
+                        <div class="donation-field">
+                            <label for="payment-method">
+                                Payment Method <span class="required">*</span>
+                            </label>
+
+                            <select
+                                id="payment-method"
+                                name="payment_method"
+                                required
+                            >
+                                <option value="">Select a payment method</option>
+                                <option value="PayPal">PayPal</option>
+                                <option value="Zelle">Zelle</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+
+                    <div class="certifications">
+
+                        <label class="certification">
+
+                            <input
+                                type="checkbox"
+                                name="own_funds_confirmation"
+                                required
+                            >
+
+                            <span>
+                                I confirm that this contribution is made from my
+                                own funds, is not being reimbursed by another
+                                person or entity, and is made in my own legal name.
+                            </span>
+
+                        </label>
+
+
+                        <label class="certification">
+
+                            <input
+                                type="checkbox"
+                                name="eligibility_confirmation"
+                                required
+                            >
+
+                            <span>
+                                I confirm that I am legally eligible to make this
+                                contribution and that the information provided
+                                above is true and complete.
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <div class="donation-submit">
+
+                        <button type="submit">
+                            Submit and Continue
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </section>
+
+
+<!-- CONTRIBUTION INFORMATION -->
+<aside class="payment-column">
+
+    <h2>Contribution Information</h2>
+
+    <div class="payment-card contribution-info-card">
+
+        <h3>How It Works</h3>
+
+        <div class="contribution-step">
+            <span class="step-number">1</span>
+
+            <div>
+                <strong>Enter Your Information</strong>
+                <p>
+                    Complete the contributor information and
+                    certifications on this page.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="contribution-step">
+            <span class="step-number">2</span>
+
+            <div>
+                <strong>Choose a Payment Method</strong>
+                <p>
+                    Select PayPal or Zelle from the payment
+                    method field.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="contribution-step">
+            <span class="step-number">3</span>
+
+            <div>
+                <strong>Complete Your Contribution</strong>
+                <p>
+                    After your information is recorded, you will
+                    be directed to PayPal or provided with the
+                    campaign's Zelle payment information.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="payment-card contribution-record-card">
+
+        <h3>Campaign Records</h3>
+
+        <p>
+            Contributor information is collected for campaign
+            recordkeeping and reporting purposes.
+        </p>
+
+        <p>
+            Submitting this form does not complete your
+            contribution. Your contribution is recorded as
+            received only after the campaign confirms payment.
+        </p>
+
+    </div>
+
+
+    <div class="payment-card contribution-security-card">
+
+        <h3>Payment Security</h3>
+
+        <p>
+            PayPal payments are completed through PayPal.
+            This website does not collect or store your
+            PayPal password, credit card number, or bank
+            account information.
+        </p>
+
+    </div>
+
+</aside>
+
+        </div>
+
+    </main>
+
+
+    <!-- PAID FOR BY -->
+    <footer class="campaign-paid-for">
+
+        <p>
+            Paid for by: Farrell for City Council 2026
+        </p>
+
+    </footer>
+
+
+<script>
+    const donationForm = document.getElementById("donation-form");
+    const submitButton = donationForm.querySelector(
+        '.donation-submit button'
+    );
+
+    const SCRIPT_URL =
+        "https://script.google.com/macros/s/AKfycbzZPwE4_x95X2KsJVO_KOhVNuc7efbgS8RxvO-sWdDqIDVnmm_xQi4NPBWoEdJihW13CQ/exec";
+
+    const PAYPAL_URL =
+        "https://www.paypal.com/ncp/payment/DGM5HVTY6TGUC";
+
+
+    donationForm.addEventListener("submit", async function(event) {
+
+        event.preventDefault();
+
+
+        // -----------------------------------------
+        // Check required fields
+        // -----------------------------------------
+
+        if (!donationForm.checkValidity()) {
+            donationForm.reportValidity();
+            return;
+        }
+
+
+        // -----------------------------------------
+        // Prevent duplicate submissions
+        // -----------------------------------------
+
+        submitButton.disabled = true;
+        submitButton.textContent =
+            "Recording Contribution Information...";
+
+
+        // -----------------------------------------
+        // Collect form information
+        // -----------------------------------------
+
+        const formData = new FormData(donationForm);
+
+        const contributionData = {
+
+            full_name:
+                formData.get("full_name"),
+
+            street_address:
+                formData.get("street_address"),
+
+            city:
+                formData.get("city"),
+
+            state:
+                formData.get("state"),
+
+            zip:
+                formData.get("zip"),
+
+            occupation:
+                formData.get("occupation"),
+
+            employer:
+                formData.get("employer"),
+
+            contribution_amount:
+                formData.get("contribution_amount"),
+
+            payment_method:
+                formData.get("payment_method"),
+
+            own_funds_confirmation:
+                formData.get("own_funds_confirmation") !== null,
+
+            eligibility_confirmation:
+                formData.get("eligibility_confirmation") !== null
+        };
+
+
+        try {
+
+            // -----------------------------------------
+            // Save contribution record
+            // -----------------------------------------
+
+            const response = await fetch(
+                SCRIPT_URL,
+                {
+                    method: "POST",
+
+                    headers: {
+                        "Content-Type": "text/plain;charset=utf-8"
+                    },
+
+                    body: JSON.stringify(contributionData)
+                }
+            );
+
+
+            if (!response.ok) {
+                throw new Error(
+                    "Unable to save contribution information."
+                );
+            }
+
+
+            const result = await response.json();
+
+
+            if (!result.success) {
+                throw new Error(
+                    result.error ||
+                    "Unable to save contribution information."
+                );
+            }
+
+
+            console.log(
+                "Contribution record created:",
+                result.submissionId
+            );
+
+
+            // -----------------------------------------
+            // Continue based on payment method
+            // -----------------------------------------
+
+            if (
+                contributionData.payment_method === "PayPal"
+            ) {
+
+                submitButton.textContent =
+                    "Opening PayPal...";
+
+                window.location.href = PAYPAL_URL;
+
+                return;
+            }
+
+
+            if (
+                contributionData.payment_method === "Zelle"
+            ) {
+
+                showZelleInstructions(
+                    result.submissionId,
+                    contributionData.contribution_amount
+                );
+
+                return;
+            }
+
+
+            throw new Error(
+                "Please select a valid payment method."
+            );
+
+
+        } catch (error) {
+
+            console.error(error);
+
+            alert(
+                "We were unable to record your contribution " +
+                "information. Your payment has NOT been processed. " +
+                "Please try again."
+            );
+
+            submitButton.disabled = false;
+
+            submitButton.textContent =
+                "Submit and Continue";
+        }
+
+    });
+
+
+    // -----------------------------------------
+    // Zelle instructions
+    // -----------------------------------------
+
+    function showZelleInstructions(
+        submissionId,
+        amount
+    ) {
+
+        const paymentColumn =
+            document.querySelector(".payment-column");
+
+        paymentColumn.innerHTML = `
+
+            <div class="payment-card">
+
+                <h2>Contributor Information Recorded</h2>
+
+                <p>
+                    Thank you. Your contributor information
+                    has been recorded.
+                </p>
+
+                <p>
+                    <strong>Contribution Amount:</strong>
+                    $${Number(amount).toFixed(2)}
+                </p>
+
+                <p>
+                    <strong>Reference:</strong><br>
+                    ${submissionId}
+                </p>
+
+                <hr>
+
+                <h3>Send Your Contribution by Zelle</h3>
+
+                <p>
+                    Send your contribution to:
+                </p>
+
+                <p>
+                    <strong>
+                        farrellforcitycouncil2026@gmail.com
+                    </strong>
+                </p>
+
+                <p class="payment-note">
+                    Your contribution will remain marked
+                    Pending until the campaign confirms
+                    receipt of the Zelle payment.
+                </p>
+
+            </div>
+        `;
+
+        paymentColumn.scrollIntoView({
+            behavior: "smooth"
+        });
+
+        submitButton.textContent =
+            "Contribution Information Recorded";
+    }
+</script>
+
+</body>
+</html>
