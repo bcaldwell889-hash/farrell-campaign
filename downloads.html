@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Campaign Downloads | Jeremiah Farrell for City Council 2026</title>
+
+    <meta
+        name="description"
+        content="Download campaign materials for Jeremiah Farrell for Palmdale City Council District 3."
+    >
+
+    <link rel="stylesheet" href="Styles.css">
+
+    <style>
+
+        /* =========================================
+           CAMPAIGN DOWNLOADS PAGE
+           ========================================= */
+
+        .downloads-header {
+            background: var(--navy);
+            border-bottom: 4px solid var(--yellow);
+        }
+
+        .downloads-header-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 18px 25px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+
+        .downloads-brand {
+            text-decoration: none;
+            color: white;
+            line-height: 1;
+        }
+
+        .downloads-brand-first,
+        .downloads-brand-last,
+        .downloads-brand-office {
+            display: block;
+        }
+
+        .downloads-brand-first {
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: var(--yellow);
+        }
+
+        .downloads-brand-last {
+            font-size: 2rem;
+            font-weight: 900;
+            color: white;
+        }
+
+        .downloads-brand-office {
+            margin-top: 4px;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--yellow);
+        }
+
+        .downloads-nav {
+            display: flex;
+            align-items: center;
+            gap: 22px;
+        }
+
+        .downloads-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+        }
+
+        .downloads-nav a:hover {
+            color: var(--yellow);
+        }
+
+        .downloads-nav-button {
+            background: var(--yellow);
+            color: var(--navy) !important;
+            padding: 11px 18px;
+            border-radius: 4px;
+        }
+
+        .downloads-nav-button:hover {
+            background: var(--yellow-hover);
+        }
+
+
+        /* =========================================
+           HERO
+           ========================================= */
+
+        .downloads-hero {
+            background: var(--navy);
+            color: white;
+            text-align: center;
+            padding: 70px 20px 75px;
+        }
+
+        .downloads-hero h1 {
+            margin: 0 0 15px;
+            color: var(--yellow);
+            font-size: 3.2rem;
+            line-height: 1.1;
+        }
+
+        .downloads-hero p {
+            max-width: 760px;
+            margin: 0 auto;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: white;
+        }
+
+
+        /* =========================================
+           DOWNLOAD AREA
+           ========================================= */
+
+        .downloads-section {
+            background: #f4f4f4;
+            padding: 70px 20px;
+        }
+
+        .downloads-container {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .downloads-intro {
+            max-width: 800px;
+            margin: 0 auto 45px;
+            text-align: center;
+        }
+
+        .downloads-intro h2 {
+            color: var(--navy);
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+
+        .downloads-intro p {
+            color: #555;
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+
+        /* =========================================
+           DOWNLOAD CARDS
+           ========================================= */
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        .download-card {
+            background: white;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 6px 22px rgba(0, 0, 0, 0.10);
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .download-preview {
+            background: #e9e9e9;
+            min-height: 280px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 20px;
+        }
+
+        .download-preview img {
+            display: block;
+            max-width: 100%;
+            max-height: 430px;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        .download-card-content {
+            padding: 25px;
+            flex: 1;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .download-card h2 {
+            color: var(--navy);
+            margin: 0 0 10px;
+            font-size: 1.55rem;
+        }
+
+        .download-card p {
+            color: #555;
+            line-height: 1.6;
+            margin: 0 0 22px;
+        }
+
+        .file-type {
+            display: inline-block;
+            align-self: flex-start;
+
+            margin-bottom: 18px;
+            padding: 5px 10px;
+
+            background: #eef1f4;
+            color: var(--navy);
+
+            border-radius: 3px;
+
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: auto;
+
+            background: var(--yellow);
+            color: var(--navy);
+
+            padding: 13px 20px;
+            border-radius: 4px;
+
+            text-decoration: none;
+            text-align: center;
+
+            font-weight: 900;
+            font-size: 1rem;
+        }
+
+        .download-button:hover {
+            background: var(--yellow-hover);
+        }
+
+
+        /* =========================================
+           BROCHURE CARD
+           ========================================= */
+
+        .brochure-card {
+            grid-column: 1 / -1;
+        }
+
+        .brochure-previews {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 100%;
+        }
+
+        .brochure-previews img {
+            width: 100%;
+            max-height: none;
+        }
+
+        .brochure-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .brochure-buttons .download-button {
+            flex: 1;
+        }
+
+
+        /* =========================================
+           QR CODE
+           ========================================= */
+
+        .qr-preview img {
+            max-width: 300px;
+            box-shadow: none;
+        }
+
+
+        /* =========================================
+           NOTE
+           ========================================= */
+
+        .downloads-note {
+            max-width: 850px;
+            margin: 45px auto 0;
+
+            background: var(--navy);
+            color: white;
+
+            border-left: 6px solid var(--yellow);
+            padding: 25px 30px;
+        }
+
+        .downloads-note h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: var(--yellow);
+        }
+
+        .downloads-note p {
+            margin: 0;
+            line-height: 1.6;
+        }
+
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+
+        .downloads-footer {
+            background: var(--navy-dark);
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        .downloads-footer p {
+            margin: 6px 0;
+        }
+
+        .downloads-footer a {
+            color: var(--yellow);
+            text-decoration: none;
+        }
+
+
+        /* =========================================
+           MOBILE
+           ========================================= */
+
+        @media (max-width: 900px) {
+
+            .downloads-header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .downloads-nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .download-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .brochure-card {
+                grid-column: auto;
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            .downloads-hero h1 {
+                font-size: 2.4rem;
+            }
+
+            .downloads-hero {
+                padding: 50px 20px;
+            }
+
+            .downloads-nav {
+                gap: 12px;
+            }
+
+            .downloads-nav a {
+                font-size: 0.85rem;
+            }
+
+            .brochure-previews {
+                grid-template-columns: 1fr;
+            }
+
+            .brochure-buttons {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         HEADER
+         ========================================= -->
+
+    <header class="downloads-header">
+
+        <div class="downloads-header-inner">
+
+            <a href="index.html" class="downloads-brand">
+
+                <span class="downloads-brand-first">
+                    JEREMIAH
+                </span>
+
+                <span class="downloads-brand-last">
+                    FARRELL
+                </span>
+
+                <span class="downloads-brand-office">
+                    FOR CITY COUNCIL 2026
+                </span>
+
+            </a>
+
+
+            <nav class="downloads-nav">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="index.html#about">
+                    About
+                </a>
+
+                <a href="index.html#goals">
+                    My Goals
+                </a>
+
+                <a href="index.html#how-to-vote">
+                    How to Vote
+                </a>
+
+                <a href="index.html#get-involved">
+                    Get Involved
+                </a>
+
+                <a href="downloads.html">
+                    Downloads
+                </a>
+
+                <a
+                    href="donate.html"
+                    class="downloads-nav-button"
+                >
+                    Donate
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================
+         HERO
+         ========================================= -->
+
+    <section class="downloads-hero">
+
+        <h1>Campaign Downloads</h1>
+
+        <p>
+            Download campaign materials for printing and sharing.
+            These files are provided for supporters who want to
+            print materials, share campaign information, or
+            distribute materials in their community.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================================
+         DOWNLOADS
+         ========================================= -->
+
+    <main class="downloads-section">
+
+        <div class="downloads-container">
+
+
+            <div class="downloads-intro">
+
+                <h2>Available Campaign Materials</h2>
+
+                <p>
+                    Select a campaign item below to download a
+                    copy to your computer or mobile device.
+                </p>
+
+            </div>
+
+
+
+            <div class="download-grid">
+
+
+                <!-- =====================================
+                     CAMPAIGN BANNER
+                     ===================================== -->
+
+                <article class="download-card">
+
+                    <div class="download-preview">
+
+                        <img
+                            src="downloads/campaign-banner.png"
+                            alt="Jeremiah Farrell campaign banner"
+                        >
+
+                    </div>
+
+
+                    <div class="download-card-content">
+
+                        <span class="file-type">
+                            PNG IMAGE
+                        </span>
+
+                        <h2>
+                            Campaign Card / Banner
+                        </h2>
+
+                        <p>
+                            A wide campaign graphic featuring
+                            Jeremiah Farrell for Palmdale City
+                            Council District 3 and the campaign's
+                            four principles.
+                        </p>
+
+                        <a
+                            href="downloads/campaign-banner.png"
+                            download
+                            class="download-button"
+                        >
+                            Download Campaign Banner
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================================
+                     CAMPAIGN POSTER
+                     ===================================== -->
+
+                <article class="download-card">
+
+                    <div class="download-preview">
+
+                        <img
+                            src="downloads/campaign-poster.jpg"
+                            alt="Jeremiah Farrell campaign poster"
+                        >
+
+                    </div>
+
+
+                    <div class="download-card-content">
+
+                        <span class="file-type">
+                            JPG IMAGE
+                        </span>
+
+                        <h2>
+                            Campaign Poster
+                        </h2>
+
+                        <p>
+                            Full-page campaign graphic containing
+                            campaign information, priorities and
+                            a QR code linking to the campaign
+                            website.
+                        </p>
+
+                        <a
+                            href="downloads/campaign-poster.jpg"
+                            download
+                            class="download-button"
+                        >
+                            Download Campaign Poster
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================================
+                     TRIFOLD BROCHURE
+                     ===================================== -->
+
+                <article class="download-card brochure-card">
+
+                    <div class="download-preview">
+
+                        <div class="brochure-previews">
+
+                            <img
+                                src="downloads/trifold-front.jpg"
+                                alt="Jeremiah Farrell campaign brochure front"
+                            >
+
+                            <img
+                                src="downloads/trifold-back.jpg"
+                                alt="Jeremiah Farrell campaign brochure back"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="download-card-content">
+
+                        <span class="file-type">
+                            JPG IMAGES
+                        </span>
+
+                        <h2>
+                            Campaign Trifold Brochure
+                        </h2>
+
+                        <p>
+                            Front and back artwork for the
+                            campaign trifold brochure. Download
+                            both files to print the complete
+                            brochure.
+                        </p>
+
+
+                        <div class="brochure-buttons">
+
+                            <a
+                                href="downloads/trifold-front.jpg"
+                                download
+                                class="download-button"
+                            >
+                                Download Front
+                            </a>
+
+                            <a
+                                href="downloads/trifold-back.jpg"
+                                download
+                                class="download-button"
+                            >
+                                Download Back
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- =====================================
+                     QR CODE
+                     ===================================== -->
+
+                <article class="download-card">
+
+                    <div class="download-preview qr-preview">
+
+                        <img
+                            src="downloads/campaign-qr-code.png"
+                            alt="QR code for the Jeremiah Farrell campaign website"
+                        >
+
+                    </div>
+
+
+                    <div class="download-card-content">
+
+                        <span class="file-type">
+                            PNG IMAGE
+                        </span>
+
+                        <h2>
+                            Campaign QR Code
+                        </h2>
+
+                        <p>
+                            Standalone campaign QR code for use
+                            with printed or digital campaign
+                            materials.
+                        </p>
+
+                        <a
+                            href="downloads/campaign-qr-code.png"
+                            download
+                            class="download-button"
+                        >
+                            Download QR Code
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- =========================================
+                 INFORMATION
+                 ========================================= -->
+
+            <div class="downloads-note">
+
+                <h3>Using Campaign Materials</h3>
+
+                <p>
+                    These materials are provided for downloading,
+                    printing and sharing. Please use the files as
+                    provided so campaign information and artwork
+                    remain consistent.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =========================================
+         FOOTER
+         ========================================= -->
+
+    <footer class="downloads-footer">
+
+        <p>
+            <strong>
+                Paid for by: Farrell for City Council 2026
+            </strong>
+        </p>
+
+        <p>
+            <a href="index.html">
+                farrellforcitycouncil2026.org
+            </a>
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
